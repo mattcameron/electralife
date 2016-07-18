@@ -439,4 +439,9 @@
 	#footer .copyright:last-child {
     margin-left: 20px;
 	}
+
+	#header nav li.email-info {
+		margin-left: 0px;
+		font-size: 13px;
+	}
 }

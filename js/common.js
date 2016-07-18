@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
   mailInfo.style.display = 'none';
 
   phoneIcon.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (window.innerWidth <= 640) {
+      mailInfo.style.display = 'none';
+    }
     switch (phoneInfo.style.display) {
       case 'inline-block': 
         phoneInfo.style.display = 'none';
@@ -23,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   mailIcon.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (window.innerWidth <= 640) {
+      phoneInfo.style.display = 'none';
+    }
     switch (mailInfo.style.display) {
       case 'inline-block': 
         mailInfo.style.display = 'none';
